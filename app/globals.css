@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&display=swap');
+@import "tailwindcss";
+
+:root {
+  --mistral-primary: #fa520f;
+  --mistral-primary-deep: #cc3a05;
+  --mistral-sunshine-300: #ffd06a;
+  --mistral-sunshine-500: #ffb83e;
+  --mistral-sunshine-700: #ffa110;
+  --mistral-sunshine-800: #ff8105;
+  --mistral-sunshine-900: #ff8a00;
+  --mistral-yellow-saturated: #ffd900;
+  --mistral-cream: #fff8e0;
+  --mistral-cream-light: #fffaeb;
+  --mistral-cream-deeper: #fff0c2;
+  --mistral-beige-deep: #e6d5a8;
+  --mistral-ink: #1f1f1f;
+  --mistral-ink-tint: #3d3d3d;
+  --mistral-charcoal: #2c2c2c;
+  --mistral-slate: #4a4a4a;
+  --mistral-steel: #6a6a6a;
+  --mistral-stone: #8a8a8a;
+  --mistral-muted: #a8a8a8;
+  --mistral-hairline: #e5e5e5;
+  --mistral-hairline-soft: #ededed;
+  --mistral-hairline-strong: #c7c7c7;
+  --mistral-canvas: #ffffff;
+  --mistral-surface: #fafafa;
+  --mistral-surface-code: #1c1c1e;
+}
+
+body {
+  background-color: var(--mistral-canvas);
+  color: var(--mistral-ink);
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  overflow-x: hidden;
+  min-height: 100vh;
+}
+
+/* Editorial Serif Font for Hero Displays (Mistral PP Editorial Old equivalent) */
+.font-editorial {
+  font-family: 'Newsreader', Georgia, 'Times New Roman', serif;
+}
+
+.font-mono-code {
+  font-family: 'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace;
+}
+
+/* Mistral Sunset Hero Ambient Atmospheric Gradient */
+.bg-mistral-sunset-ambient {
+  background: radial-gradient(circle at 50% 0%, rgba(255, 208, 106, 0.25) 0%, rgba(250, 82, 15, 0.08) 35%, rgba(255, 255, 255, 0) 70%);
+}
+
+/* Mistral Signature Sunset Stripe Horizontal Band */
+.sunset-stripe-bar {
+  background: linear-gradient(90deg, #fa520f 0%, #ff8105 25%, #ffa110 50%, #ffd900 75%, #fff8e0 100%);
+  height: 6px;
+  width: 100%;
+}
+
+.sunset-stripe-band-full {
+  background: linear-gradient(90deg, #fa520f 0%, #ff8105 25%, #ffa110 50%, #ffd900 75%, #fff8e0 100%);
+}
+
+/* Mistral Cream Card / Panel */
+.mistral-card-cream {
+  background-color: var(--mistral-cream);
+  border: 1px solid var(--mistral-beige-deep);
+  color: var(--mistral-ink);
+  border-radius: 12px;
+}
+
+.mistral-card-white {
+  background-color: var(--mistral-canvas);
+  border: 1px solid var(--mistral-hairline-soft);
+  color: var(--mistral-ink);
+  border-radius: 12px;
+}
+
+/* Custom Scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(31, 31, 31, 0.15);
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(31, 31, 31, 0.3);
+}
+
+/* Markdown typography matching Mistral editorial standards */
+.prose-mistral {
+  color: var(--mistral-ink);
+  line-height: 1.65;
+}
+.prose-mistral h1,
+.prose-mistral h2,
+.prose-mistral h3,
+.prose-mistral h4 {
+  color: var(--mistral-ink);
+  font-weight: 600;
+  margin-top: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+.prose-mistral h1 { font-size: 1.4rem; font-family: 'Newsreader', serif; }
+.prose-mistral h2 { font-size: 1.2rem; }
+.prose-mistral h3 { font-size: 1.05rem; }
+.prose-mistral p {
+  margin-bottom: 0.75rem;
+}
+.prose-mistral ul, .prose-mistral ol {
+  padding-left: 1.3rem;
+  margin-bottom: 0.75rem;
+}
+.prose-mistral ul { list-style-type: disc; }
+.prose-mistral ol { list-style-type: decimal; }
+.prose-mistral li {
+  margin-bottom: 0.3rem;
+}
+.prose-mistral table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1rem 0;
+  font-size: 0.85rem;
+}
+.prose-mistral th, .prose-mistral td {
+  border: 1px solid var(--mistral-hairline);
+  padding: 0.5rem 0.75rem;
+  text-align: left;
+}
+.prose-mistral th {
+  background: var(--mistral-cream);
+  font-weight: 600;
+  color: var(--mistral-ink);
+}
+.prose-mistral blockquote {
+  border-left: 3px solid var(--mistral-primary);
+  padding-left: 1rem;
+  font-style: italic;
+  color: var(--mistral-steel);
+  margin: 0.75rem 0;
+}
+.prose-mistral a {
+  color: var(--mistral-primary);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.prose-mistral code:not(pre code) {
+  background: var(--mistral-cream-deeper);
+  color: var(--mistral-ink);
+  padding: 0.15rem 0.4rem;
+  border-radius: 4px;
+  font-size: 0.85em;
+  font-family: 'JetBrains Mono', monospace;
+}
