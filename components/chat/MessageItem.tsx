@@ -61,10 +61,12 @@ export const MessageItem: React.FC<MessageItemProps> = ({
   return (
     <div className="flex justify-start mb-6 group">
       <div className="flex items-start gap-2.5 max-w-full sm:max-w-[90%] w-full">
-        {/* Avatar: Mistral sunset gradient */}
-        <div className="w-8 h-8 rounded-[8px] bg-gradient-to-br from-[#fa520f] via-[#ffa110] to-[#ffd900] flex items-center justify-center shrink-0 text-white font-bold text-xs shadow-xs">
-          NX
-        </div>
+        {/* Assistant Avatar */}
+        <img
+          src="/logo.svg"
+          alt="NEXUSCIENCE"
+          className="w-8 h-8 rounded-[8px] object-contain shrink-0"
+        />
 
         {/* Content Body */}
         <div className="flex-1 min-w-0">

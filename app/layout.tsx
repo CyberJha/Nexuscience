@@ -7,6 +7,11 @@ export const metadata: Metadata = {
     'An intelligent tool-using AI assistant powered by a ReAct agent, capable of mathematical reasoning, Wikipedia knowledge retrieval, and live Tavily web search.',
   keywords: ['Mistral AI', 'AI Agent', 'ReAct', 'Groq', 'LangChain', 'Tavily', 'Wikipedia', 'Calculator'],
   authors: [{ name: 'NEXUSCIENCE Team' }],
+  icons: {
+    icon: '/favicon.ico',
+    shortcut: '/favicon.ico',
+    apple: '/logo.svg',
+  },
 };
 
 export const viewport: Viewport = {

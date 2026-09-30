@@ -43,10 +43,12 @@ export const Header: React.FC<HeaderProps> = ({
         {/* Brand / Logo */}
         <div className="flex items-center gap-3">
           <div className="flex items-center gap-2.5">
-            {/* Mistral geometric M-mark with orange gradient */}
-            <div className="w-8 h-8 rounded-[8px] bg-gradient-to-br from-[#fa520f] via-[#ffa110] to-[#ffd06a] flex items-center justify-center text-white shadow-sm font-bold text-xs">
-              NX
-            </div>
+            {/* Brand Logo */}
+            <img
+              src="/logo.svg"
+              alt="NEXUSCIENCE Logo"
+              className="w-8 h-8 rounded-[8px] object-contain shrink-0"
+            />
             <div className="flex flex-col">
               <span className="font-extrabold text-base sm:text-lg tracking-tight text-[#1f1f1f]">
                 NEXUS<span className="text-[#fa520f]">CIENCE</span>
